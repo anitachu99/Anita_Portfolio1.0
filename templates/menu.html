@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock title %}
+
+{% block content %}
+
+<div class="bg-skyImage w-full h-full bg-no-repeat bg-cover bg-center">
+    <div class="absolute right-0 top-0 mt-10 mr-5 animate-bounce-slow">
+      <a href="{% url 'index' %}">
+        <img src="static/images/sun.png" class="w-[90px] h-[93px]" />
+      </a>
+      <p class="font-jost text-center text-white">Back</p>
+    </div>
+    <div class="h-screen flex justify-center items-center ">
+      <div>
+        <a href="{% url 'about' %}">
+          <h1 class="font-jost text-8xl text-white hover:animate-bounce-slow">ABOUT ME</h1>
+        </a>
+        <a href="{% url 'projects' %}">
+          <h1 class="font-jost text-8xl text-white hover:animate-bounce-slow">PROJECTS</h1>
+        </a>
+        <a href="{% url 'contact' %}">
+          <h1 class="font-jost text-8xl text-white hover:animate-bounce-slow">CONTACT ME</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

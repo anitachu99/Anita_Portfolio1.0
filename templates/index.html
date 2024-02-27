@@ -4,7 +4,9 @@
 {% block content %}
   <div class="bg-skyImage w-full h-full bg-no-repeat bg-cover bg-center">
     <div class="absolute ml-10 mt-10 animate-bounce-slow">
-      <img src="static/images/sun.png" class="w-[90px] h-[93px]" />
+      <a href="{% url 'menu' %}">
+        <img src="static/images/sun.png" class="w-[90px] h-[93px]" />
+      </a>
       <p class="font-jost text-center text-white">Click Me</p>
     </div>
     <div class="h-screen flex justify-center items-center ">

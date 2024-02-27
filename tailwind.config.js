@@ -11,6 +11,9 @@ module.exports = {
       },
       animation: {
         'bounce-slow': 'bounce 1.5s linear infinite',
+      },
+      colors: {
+        'greyColor': '#acb4c4'
       }
     },
   },
