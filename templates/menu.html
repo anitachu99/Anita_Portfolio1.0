@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<div class="bg-skyImage w-full h-full bg-no-repeat bg-cover bg-center">
+<div class="bg-skyImage w-full h-full bg-no-repeat bg-cover bg-top">
     <div class="absolute right-0 top-0 mt-10 mr-5 animate-bounce-slow">
-      <a href="{% url 'index' %}">
+      <a href="{% url 'index' %}" class="slideInUp">
         <img src="static/images/sun.png" class="w-[90px] h-[93px]" />
       </a>
       <p class="font-jost text-center text-white">Back</p>
