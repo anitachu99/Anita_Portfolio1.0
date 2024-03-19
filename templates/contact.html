@@ -1,11 +1,29 @@
 {% extends "base.html" %}
 
-{% block title %}Menu{% endblock title %}
+{% block title %}Contact{% endblock title %}
 
 {% block content %}
 
-<div class="bg-skyImage w-full h-full bg-no-repeat bg-cover bg-center">
-    
-  </div>
+<section class="h-screen flex items-center justify-center lg:mb-4 lg:ml-60 lg:mb-40 2xl:ml-80 2xl:mb-80">
+   <div class="sm:grid-cols-1 lg:gap-10 lg:grid lg:grid-cols-2 2xl:grid-cols-2 2xl:gap-60">
+        <div class="text-left ">
+            <h1 class="text-[80px] font-medium text-white font-jost animate-typing overflow-hidden whitespace-nowrap">Contact Me</h1>
+            <p class="2xl:pr-80 text-3xl text-white font-jostReg-light">Let's work together! </p>
+            <p class="2xl:pr-80 text-3xl text-white font-jostReg-light">Not only am I passionate about coding, I take in knowledge quickly and efficiently. If that is what you want in a programmer, <a class="underline hover:text-slate-300" href="mailto:c8anita@gmail.com">email me now!</a></p></p>
+        </div>
+        <div>
+            <div class="grid absolute gap-x-10 gap-y-20 grid-cols-2 py-20 px-20">
+                <div class="box-content h-20 w-20 p-4 border-4 rounded-full bg-white hover:animate-bounce-slow"><a href="https://drive.google.com/file/d/1gOwrivZUaKcPA2dGDFGHpBs1v9M68ey4/view?usp=drive_link" target="_blank"><img src="static/images/cv.png" /></a></div>
+                <div class="box-content h-20 w-20 p-4 border-4 rounded-full bg-white hover:animate-bounce-slow"><a href="https://www.linkedin.com/in/anita-chu-17208a157/" target="_blank"></a><img src="static/images/linkedin.png" /></div>
+            </div>
+        </div>
+   </div>
+    <a href="{% url 'index' %}">
+        <img src="static/images/cloud.png" class="w-[90px] h-[90px] absolute sm:left-10 sm:mt-20 lg:left-10 lg:mt-2 object-cover animate-bounce-slow" />
+    </a>
+    <a href="{% url 'index' %}">
+        <img src="static/images/cloud.png" class="w-[90px] h-[90px] absolute sm:right-10 sm:mt-20 lg:right-10 lg:mt-2 object-cover animate-bounce-slow" />
+    </a>
+</section>
 
 {% endblock %}
