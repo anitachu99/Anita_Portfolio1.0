@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./templates/**/*.{html,js}'],
+  content: [
+    './templates/**/*.{html,js}',
+    'node_modules/preline/dist/*.js',
+],
   theme: {
     extend: {
       fontFamily: {
@@ -42,7 +45,23 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('preline/plugin'),
+    function({addUtilities}){
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+      },
+  
+        /* Hide scrollbar for IE, Edge and Firefox */
+        ".no-scrollbar": {
+          " -ms-overflow-style": "none",  /* IE and Edge */
+            "scrollbar-width": "none",  /* Firefox */
+        },
+      };
+
+      addUtilities(newUtilities)
+    }
   ],
 }
 
