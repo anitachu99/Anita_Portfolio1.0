@@ -4,14 +4,14 @@
 
 {% block content %}
 
-<section class="h-screen flex items-center justify-center lg:mt-1 lg:ml-60 2xl:ml-80 2xl:mb-80">
+<section class="h-screen flex items-center justify-center lg:mt-1 lg:ml-60 2xl:ml-80 2xl:mb-10 overscroll-contain overflow-auto">
     <div class="grid grid-cols-6">
         <div class="col-span-2 text-left">
           <h2 class="text-[80px] font-medium text-white font-jost animate-typing overflow-hidden whitespace-nowrap">Projects</h2>
       
           <ul class="sticky top-0" data-hs-scrollspy="#scrollspy-2" data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2">
             <li data-hs-scrollspy-group>
-              <a href="#FurEverHome" class="block py-0.5 2xl:pr-80 text-3xl text-white font-jostReg-light hover:animate-bounce-slow ">FurEver Home</a>
+              <a href="#FurEverHome" class="block py-0.5 2xl:pr-40 text-3xl text-white font-jostReg-light hover:animate-bounce-slow ">FurEver Home</a>
             </li>
             <li>
               <a href="#HireMi" class="block py-0.5 2xl:pr-80 text-3xl text-white font-jostReg-light hover:animate-bounce-slow ">HireMi</a>
@@ -19,14 +19,14 @@
           </ul>
         </div>
       
-        <div class="col-span-3 overflow-y-scroll h-[50vh] w-full scroll-smooth">
-          <div id="scrollspy-2" class="space-y-10 no-scrollbar">
+        <div class="col-span-3 overflow-y-scroll h-[50vh] 2xl:ml-60 w-full scroll-smooth no-scrollbar">
+          <div id="scrollspy-2" class="space-y-10 no-scrollbar w-full h-full">
             <div id="FurEverHome" class="delay-[300ms] duration-[600ms] taos:translate-y-[-200px] taos:opacity-0" data-taos-offset="500">
                 <img src="static/images/fureverhome-hp.png" class="w-[600px] h-[400px]">
-                <p class="block py-10 px-2 mr-20 2xl:pr-80 text-3xl text-white font-jostReg-light">Find your perfect pet faster. This adoption website taps into real-time Petfinder data, offering a seamless experience with sleek CSS animations.</p>
+                <p class="block max-lg:py-10 px-2 mr-20 2xl:pr-[400px] text-3xl text-white font-jostReg-light">Find your perfect pet faster. This adoption website taps into real-time Petfinder data, offering a seamless experience with sleek CSS animations.</p>
                 <hr class="w-[620px] h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
                 <h3 class="py-10 2xl:pr-80 text-3xl text-white font-jostReg-light">Tech Stack</h3>
-                <div class="grid gap-x-[20px] gap-y-[20px] grid-cols-3">
+                <div class="grid max-2xl:px-[4px] 2xl:mr-80 min-lg:gap-x-[20px] gap-y-[20px] grid-cols-3">
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">React.js</div>
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">JavaScript</div>
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">HTML5</div>
@@ -37,10 +37,10 @@
             </div>  
             <div id="HireMi">
                 <img src="static/images/resumeBuilder.png" class="w-[600px] h-[400px]">
-                <p class="block py-10 px-2 mr-20 2xl:pr-80 text-3xl text-white font-jostReg-light">Revolutionize your resume effortlessly. I led the front-end development using React and SCSS for a seamless experience.</p>
+                <p class="block py-10 px-2 mr-20 2xl:pr-[400px] text-3xl text-white font-jostReg-light">Revolutionize your resume effortlessly. I led the front-end development using React and SCSS for a seamless experience.</p>
                 <hr class="w-[620px] h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
                 <h3 class="py-10 2xl:pr-80 text-3xl text-white font-jostReg-light">Tech Stack</h3>
-                <div class="grid gap-x-[20px] gap-y-[20px] grid-cols-3">
+                <div class="grid max-2xl:px-[4px] 2xl:mr-80 lg:gap-x-[20px] gap-y-[20px] grid-cols-3">
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">React.js</div>
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">JavaScript</div>
                     <div class="box-content h-4 w-20 p-4 rounded-full justify-center items-center flex bg-white text-lg text-slate-500 font-jostReg-light">SCSS</div>
