@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'anita-portfolio1-0-7.onrender.com', 
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost'
 ]
 
 
