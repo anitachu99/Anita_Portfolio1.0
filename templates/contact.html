@@ -3,6 +3,8 @@
 {% block title %}Contact{% endblock title %}
 
 {% block content %}
+{% load compress %}
+{% compress css %}
 
 <section class="h-screen flex items-center justify-center lg:mb-4 lg:ml-60 lg:mb-40 2xl:ml-80 2xl:mb-80">
    <div class="sm:grid-cols-1 lg:gap-10 lg:grid lg:grid-cols-2 2xl:grid-cols-2 2xl:gap-60">
@@ -25,5 +27,5 @@
         <img src="static/images/cloud.png" class="w-[90px] h-[90px] absolute sm:right-10 sm:mt-20 lg:right-10 lg:mt-2 object-cover animate-bounce-slow" />
     </a>
 </section>
-
+{% endcompress %}
 {% endblock %}
